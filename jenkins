@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("GIT_CHECKOUT"){
             steps{
-               git 'https://github.com/kamal0308/maven-hello-world.git'
+               git 'https://github.com/kamal0308/maven-hello-world/blob/master/jenkins'
             }
         }
         stage("Maven build"){
