@@ -1,0 +1,15 @@
+pipeline{
+    agent any
+    stages{
+        stage("GIT_CHECKOUT"){
+            steps{
+               git 'https://github.com/gayazsheik7/toomuch-headache.git'
+            }
+        }
+        stage("Maven build"){
+            steps{
+                sh "mvn clean package"
+            }
+        }
+    }
+}
