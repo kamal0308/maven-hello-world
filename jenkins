@@ -8,10 +8,9 @@ pipeline{
         }
         stage("Maven build"){
             steps{
-            with Maven(maven: 'maven') {
                 sh "mvn compiler:compile"
             }
         }
     }
 }
-}
+
